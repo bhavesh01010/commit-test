@@ -1,0 +1,29 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET,HEAD,PUT,PATCH,POST,DELETE"
+        },
+        { "key": "Access-Control-Allow-Credentials", "value": "true" }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/commit",
+      "destination": "https://ossrndc.in/"
+    },
+    {
+      "source": "/redirect",
+      "destination": "/redirect"
+    },
+    {
+      "source": "ossrndc.in/commit",
+      "destination": "https://ossrndc.in"
+    }
+  ]
+}
